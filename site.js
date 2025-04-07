@@ -35,7 +35,7 @@ let pic30=document.getElementsByClassName("chek30")[0];
 let holst=document.getElementsByClassName("canvas")[0].getContext("2d");
 let t=document.getElementsByClassName("rec")[0];
 let img=new Image();
-img.src="blob:https://web.whatsapp.com/f94459fb-e7f0-408e-8a11-98c5e52ec810";
+img.src="https://ya.ru/images/search?url=https%3A%2F%2Favatars.mds.yandex.net%2Fget-images-cbir%2F4580879%2FWZoUP225mxvf352elPt1WA2311%2Forig&img_url=https%3A%2F%2Fi0.wp.com%2Fst.depositphotos.com%2F5466018%2F56475%2Fv%2F1600%2Fdepositphotos_564753550-stock-illustration-hexagon-radar-template-spider-mesh.jpg%3Fssl%3D1&cbir_id=4580879%2FWZoUP225mxvf352elPt1WA2311&cbird=188&lr=54&rpt=imageview&cbir_page=similar";
 
 function painter(){
 	holst.drawImage(img,100,0,300,230);
