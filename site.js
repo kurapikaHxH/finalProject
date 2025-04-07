@@ -35,7 +35,7 @@ let pic30=document.getElementsByClassName("chek30")[0];
 let holst=document.getElementsByClassName("canvas")[0].getContext("2d");
 let t=document.getElementsByClassName("rec")[0];
 let img=new Image();
-img.src="../img/graphic.jpg";
+img.src="blob:https://web.whatsapp.com/f94459fb-e7f0-408e-8a11-98c5e52ec810";
 
 function painter(){
 	holst.drawImage(img,100,0,300,230);
