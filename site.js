@@ -1072,3 +1072,25 @@ let isCheck30 = true;
 }
 
 result.addEventListener("click", checkForm);
+const slides = document.querySelector('.ob')
+const slideCount = document.querySelectorAll('.card').length;
+const prevButton = document.querySelector('.arrow-l');
+const nextButton = document.querySelector('.arrow-r');
+ let currentIndex = 0;
+   function goToSlide(index) {
+        if (index < 0) {
+            index = slideCount - 12; 
+        } 
+		else if (index >= slideCount-11) {
+            index = 0; 
+        }
+		 currentIndex = index; 
+        slides.style.transform = `translateX(${-index * 75}%)`; 
+    }
+	 prevButton.addEventListener('click', () => {
+        goToSlide(currentIndex - 1);
+    });
+	nextButton.addEventListener('click', () => {
+        goToSlide(currentIndex + 1);
+    });
+	 goToSlide(0);
